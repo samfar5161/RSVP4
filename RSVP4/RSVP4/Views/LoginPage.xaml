@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP4.LoginPage">
+    
+    <ContentPage.Content>
+        
+        <TableView>
+             
+            <TableRoot>
+
+                <TableSection>
+
+                    <ViewCell>
+                        <Label Text="UserName"
+                               HorizontalOptions="Center"/>
+                    </ViewCell>
+                    
+                    <ViewCell>
+                        <Entry Placeholder="Enter Username"
+                               x:Name="EntUserName"
+                               Text="{Binding UserName}"/>
+                    </ViewCell>
+                    
+                    <ViewCell>
+                        <Label Text="Password"
+                               HorizontalOptions="Center"/>
+                    </ViewCell>
+                    
+                    <ViewCell>
+                        <Entry Placeholder="Enter Password"
+                               x:Name="EntPassword"
+                               Text="{Binding Password}"
+                               IsPassword="True"/>
+                    </ViewCell>
+                    
+                </TableSection>
+
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Go"
+                                x:Name="BtnLogin"
+                                Clicked="BtnLogin_Clicked"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Button Text="Clear"
+                                x:Name="BtnLoginClear"
+                                Clicked="BtnLoginClear_Clicked"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Button Text="Sign Up"
+                                x:Name="BtnSignUp"
+                                Clicked="BtnSignUp_Clicked"/>
+                    </ViewCell>
+
+                </TableSection>
+            </TableRoot>
+
+        </TableView>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\bin\Debug\netstandard2.0\RSVP4.deps.json
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\bin\Debug\netstandard2.0\RSVP4.dll
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\bin\Debug\netstandard2.0\RSVP4.pdb
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\Views\CreateNewEventPage.xaml.g.cs
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\Views\EventDetailPage.xaml.g.cs
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\Views\RSVPEventPage.xaml.g.cs
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\Views\ViewAllEventsPage.xaml.g.cs
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\RSVP4.csproj.CoreCompileInputs.cache
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\RSVP4.AssemblyInfoInputs.cache
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\RSVP4.AssemblyInfo.cs
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\RSVP4.dll
+C:\Users\Ashton\source\repos\RSVP4\RSVP4\RSVP4\obj\Debug\netstandard2.0\RSVP4.pdb

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP4.Views.CreateNewEventPage">
+    
+    <ContentPage.Content>
+        
+        <TableView>
+            <TableRoot>
+                <TableSection x:Name="TblSctn_EventInfo1">
+                    
+                    <EntryCell Label="Name" 
+                               Placeholder="Enter Event Name"
+                               x:Name="EntName"
+                               Text="{Binding Name}"/>
+                    
+                    <EntryCell Label="Address" 
+                               Placeholder="Enter Address"
+                               x:Name="EntAddress"
+                               Text="{Binding Address}"
+                               />
+                    
+                    <EntryCell Label="People" 
+                               Placeholder="Enter Number of People"
+                               x:Name="EntPeople"
+                               Text="{Binding People}"
+                               />
+                    
+                    <EntryCell Label="Host Name" 
+                               Placeholder="Enter Name of Host"
+                               x:Name="EntHostName"
+                               Text="{Binding HostName}"/>
+                    
+                </TableSection>
+                
+                <TableSection x:Name="TblSctn_EventInfo2">
+                    
+                    <ViewCell>
+                        <Label Text="Event Date"
+                               HorizontalOptions="Center"
+                               />
+                    </ViewCell>
+                    <ViewCell>
+                        <DatePicker x:Name="EntEventDate"
+                                    Date="{Binding EventDateTime}"
+                                    MinimumDate="9/2018"
+                                    MaximumDate="12/2022"
+                                    />
+                    </ViewCell>
+                    <ViewCell>
+                        <Label Text="Event Time"
+                               HorizontalOptions="Center"
+                               />
+                    </ViewCell>
+                    <ViewCell>
+                        <TimePicker x:Name="EntEventTime"
+                                    Time="{Binding EventTime}"                                  
+                                    />
+                    </ViewCell>
+                    <ViewCell>
+                        <Label Text="RSVP Deadline"
+                               HorizontalOptions="Center"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <DatePicker x:Name="EntRSVP_Deadline"
+                                    Date="{Binding RSVP_Deadline}"
+                                    MinimumDate="9/2018"
+                                    MaximumDate="1/2022"
+                                    />
+                    </ViewCell>
+
+                    <ViewCell>
+                        <Button Text="Go"
+                                x:Name="BtnCreateNewEvent"
+                                Clicked="BtnCreateNewEvent_Clicked"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Button Text="Clear"
+                                x:Name="BtnCreateNewEventClear"
+                                Clicked="BtnCreateNewEventClear_Clicked"/>
+                        
+                    </ViewCell>
+                </TableSection>
+                
+                
+            </TableRoot>
+            
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

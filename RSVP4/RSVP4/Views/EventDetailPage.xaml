@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP4.Views.EventDetailPage">
+    <ContentPage.Content>
+
+        <TableView>
+            <TableRoot>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Event Details"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center"
+                               FontSize="Medium"/>
+                    </ViewCell>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Event Name"
+                               VerticalOptions="Center"
+                               HorizontalOptions="StartAndExpand"
+                               Margin="5"/>
+                    </ViewCell>
+                    
+                    <TextCell Text="{Binding Name, Mode=TwoWay}"/>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Location"
+                               VerticalOptions="Center"
+                               HorizontalOptions="StartAndExpand"
+                               Margin="5"/>
+                    </ViewCell>
+                    
+                    <TextCell Text="{Binding Address, Mode=TwoWay}"/>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Number of People Invited"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="5"/>
+                    </ViewCell>
+                    <TextCell Text="{Binding People, Mode=TwoWay}"/>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Host"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="5"/>
+                    </ViewCell>
+                    <TextCell Text="{Binding HostName, Mode=TwoWay}"/>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Date"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="5"/>
+                    </ViewCell>
+                    <TextCell Text="{Binding EventDateTime, StringFormat='\{0:MMMM dd, yyyy}',Mode=TwoWay}"/>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="Time"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="5"/>
+                    </ViewCell>
+                    <TextCell Text="{Binding EventDateTime, Mode=TwoWay, StringFormat='\{0: h:mm tt}'}"/>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="RSVP Deadline"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               Margin="5"/>
+                    </ViewCell>
+                    <TextCell Text="{Binding RSVP_Deadline, StringFormat='\{0:MMMM dd, yyyy}', Mode=TwoWay}"/>
+                </TableSection>
+                <TableSection>
+                    <ViewCell>
+                        <Button Text="Back to List"
+                                x:Name="BtnReturnToList"
+                                Clicked="BtnReturnToList_Clicked"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Button Text="RSVP To Event"
+                                x:Name="BtnRSVP"
+                                Clicked="BtnRSVP_Clicked"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Button Text="Edit Event"
+                                x:Name="BtnEditEvent"
+                                Clicked="BtnEditEvent_Clicked"/>
+                    </ViewCell>
+                    <ViewCell>
+                        <Button Text="Delete Event"
+                                x:Name="BtnDeleteEvent"
+                                Clicked="BtnDeleteEvent_Clicked"/>
+                    </ViewCell>
+                </TableSection>
+
+
+            </TableRoot>
+        </TableView>
+
+    </ContentPage.Content>
+</ContentPage>

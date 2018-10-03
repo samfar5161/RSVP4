@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP4.Views.RSVPEventPage">
+    <ContentPage.Content>
+
+        <TableView>
+            <TableRoot>
+                <!-- Top/Header -->
+                <TableSection>
+                    <ViewCell>
+                        <Label Text="RSVP To These Events"
+                               HorizontalOptions="Center"/>
+                    </ViewCell>
+                </TableSection>
+
+                <!-- List Section -->
+                <TableSection>
+                    <ViewCell>
+                        <ListView x:Name="LstVwRSVPEventsList">
+
+                        </ListView>
+                    </ViewCell>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        
+    </ContentPage.Content>
+</ContentPage>

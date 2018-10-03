@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RSVP4.Views.ViewAllEventsPage">
+    
+    <ContentPage.Content>
+
+        <StackLayout>
+            <Label Text="View All Events"
+                HorizontalOptions="Center"/>
+
+
+            <Button Text="Add New Event"
+                x:Name="BtnCreateNewEvent"
+                Clicked="BtnCreateNewEvent_Clicked"/>
+
+
+            <ListView x:Name="LstVwEventList"
+                      ItemSelected="LstVwEventList_ItemSelected">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal"
+                                         x:Name="StckItems">
+                                
+                                <Label Text="{Binding Name}"
+                                       FontAttributes="Bold"
+                                       VerticalOptions="Center"
+                                       FontSize="Medium"/>
+                                
+                                <Button Text="View Event" 
+                                        HorizontalOptions="EndAndExpand"
+                                        IsVisible="True"
+                                        x:Name="BtnViewEventDetail"
+                                        Clicked="BtnViewEventDetail_Clicked"/>
+                                
+                            </StackLayout>
+                            
+                        </ViewCell>
+
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+        </StackLayout>
+    
+
+    </ContentPage.Content>
+</ContentPage>
